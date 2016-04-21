@@ -71,7 +71,6 @@ points(boston$LON[boston$MEDV>=21.2], boston$LAT[boston$MEDV>=21.2], col="red", 
 
 
 
-# Let's use all the variables
 
 # Split the data
 library(caTools)
