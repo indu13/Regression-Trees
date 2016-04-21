@@ -10,7 +10,7 @@ plot(boston$LON, boston$LAT)
 # Tracts alongside the Charles River
 points(boston$LON[boston$CHAS==1], boston$LAT[boston$CHAS==1], col="blue", pch=19)
 
-# Plot MIT
+# Plot 
 points(boston$LON[boston$TRACT==3531],boston$LAT[boston$TRACT==3531],col="red", pch=20)
 
 # Plot polution
@@ -24,7 +24,7 @@ points(boston$LON[boston$MEDV>=21.2], boston$LAT[boston$MEDV>=21.2], col="red", 
 
 
 
-# VIDEO 3
+
 
 # Linear Regression using LAT and LON
 plot(boston$LAT, boston$MEDV)
@@ -41,7 +41,6 @@ points(boston$LON[latlonlm$fitted.values >= 21.2], boston$LAT[latlonlm$fitted.va
 
 
 
-# Video 4
 
 # Load CART packages
 library(rpart)
@@ -72,8 +71,6 @@ points(boston$LON[boston$MEDV>=21.2], boston$LAT[boston$MEDV>=21.2], col="red", 
 
 
 
-# VIDEO 5
-
 # Let's use all the variables
 
 # Split the data
@@ -102,8 +99,6 @@ tree.sse = sum((tree.pred - test$MEDV)^2)
 tree.sse
 
 
-
-# Video 7
 
 # Load libraries for cross-validation
 library(caret)
